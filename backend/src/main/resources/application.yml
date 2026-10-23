@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: legal-document-analyzer
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 20MB
+
+server:
+  port: 8080
+
+app:
+  ai:
+    provider: ${AI_PROVIDER:demo}
+    api-key: ${AI_API_KEY:}
